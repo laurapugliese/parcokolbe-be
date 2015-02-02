@@ -1,0 +1,3167 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Orari di Parco Kolbe</title>
+</head>
+
+<body>
+
+	<div style="width: 100%; float: left; margin-bottom: 10px;">
+		<div
+			style="width: 300px; padding-top: 20px; height: 130px; float: left;">
+			<img src="../images/logo_PK.jpg" width="280" border="0" align="left"
+				title="Parco Kolbe" />
+		</div>
+		<div
+			style="width: 330px; padding-top: 20px; color: #666; float: left; font-family: Verdana; color: #012963; font-size: 13px;">
+
+			<font color="#CC0000"><strong>ITALIANA FITNESS PARCO
+					KOLBE</strong></font><br /> <font color="#666666">
+				<p>
+					Via Tiburtina, 949<br /> (Uscita della Metro Rebibbia)<br />
+					00156 Roma (RM)<br /> Tel.: 0640860014<br /> &nbsp;
+				</p>
+				<p>
+					CENTRO FITNESS. SPA. PISCINE INTERNE ed ESTERNE. CAMPUS ESTIVI.
+					PARCO PUBBLICO<br /> &nbsp;
+				</p> parcokolbe@italianafitness.it
+			</font>
+		</div>
+	</div>
+
+	<div>
+		<p align="left" class="noPrint">
+			<a href="#" onClick="window.print();return false"
+				title="Stampa gli orari"><img
+				src="/modules/timetable/img/stampa.jpg" border="0" /></a> <a
+				href="javascript:self.close()"><img
+				src="/modules/timetable/img/chiudi.jpg" border="0" /></a>
+		</p>
+		<style type='text/css'>
+.container {
+	background: #a90500;
+	color: #000;
+	border: 1px solid;
+}
+
+.calendario {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border: 1px solid #bebebe;
+}
+
+.calendario caption {
+	text-align: left;
+	padding: 3px 0;
+	padding-left: 10px;
+	padding-top: 15px;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.calendario th {
+	border-right: 1px solid #bebebe;
+	padding: 3px;
+	vertical-align: middle;
+	text-align: center;
+	font: bold 9px Verdana, sans-serif;
+	text-transform: uppercase;
+}
+
+.th_hours {
+	background: #a90500;
+	color: #fff;
+}
+
+.th_day {
+	background: #a90500;
+	color: #fff;
+}
+
+.th_holiday {
+	background: #fff;
+	color: #a90500;
+}
+
+.hours_width {
+	width: 50px;
+	height: 1px;
+}
+
+.days_width {
+	width: 65px;
+	height: 1px;
+}
+
+.calendario td {
+	border: 1px solid #bebebe;
+	padding: 3px;
+	height: 8px;
+	vertical-align: middle;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 9px;
+}
+
+.light_hours {
+	background: #075a13;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.dark_hours {
+	background: #296c29;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.light_cells {
+	background: #f1f1f1;
+}
+
+.dark_cells {
+	background: #ddd;
+}
+
+.reserved_cells {
+	background: #d7d7d7;
+	color: #075951;
+	font: 10px Verdana, sans-serif;
+}
+
+#activity #label {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#activity {
+	color: #f60;
+}
+
+#label {
+	color: #666;
+}
+
+@media print {
+	table {
+		page-break-inside: avoid;
+	}
+	//
+	tr {
+		page-break-inside: avoid;
+	}
+	//
+	thead {
+		display: table-header-group;
+	}
+	//
+	tfoot {
+		display: table-footer-group;
+	}
+	.noPrint {
+		display: none;
+	}
+}
+
+div.speechbubbles {
+	background-color: #eee; /*background color of tooltip*/
+	border: 1px solid #999;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	visibility: hidden;
+	line-height: 1.3em;
+	padding: 8px;
+	width: 155px; /*default width of tooltip*/
+	border-radius: 8px; /*CSS3 border radius*/
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	box-shadow: 0 0 10px #888888; /*CSS3 shadow*/
+	-moz-box-shadow: 0 0 10px #888888;
+	-webkit-box-shadow: 0 0 10px #888888;
+	color: #666;
+	font: 10px Verdana, sans-serif;
+}
+
+div.speechbubbles div.speechbubbles-arrow {
+	/*shared CSS for arrow DIV (upwards pointing)*/
+	border-color: transparent transparent #eee transparent;
+	/*border color should be same as div.speechbubbles background color*/
+	border-style: solid;
+	border-width: 10px;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: -19px;
+	left: 20px;
+	z-index: 101;
+	_display: none; /*IE hack to hide arrow in IE6*/
+}
+
+div.speechbubbles div.speechbubbles-arrow-border {
+	/*shared CSS for arrow border DIV*/
+	border-color: transparent transparent #CCC transparent;
+	/*border color should be same as div.speechbubbles border color*/
+	border-style: solid;
+	border-width: 10px;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	z-index: 101;
+	_display: none; /*IE hack to hide arrow in IE6*/
+}
+
+div.downversion div.speechbubbles-arrow {
+	/*down arrow DIV specific CSS*/
+	border-color: #eee transparent transparent transparent;
+	/*border color should be same as div.speechbubbles background color*/
+	top: auto;
+	bottom: -19px;
+}
+
+div.downversion div.speechbubbles-arrow-border {
+	/*down arrow border DIV specific CSS*/
+	border-color: #CCC transparent transparent transparent;
+	/*border color should be same as div.speechbubbles border color*/
+	top: auto;
+	bottom: -20px;
+}
+</style>
+		<script type='text/javascript'
+			src='/modules/timetable/lib/speechbubbles.js'></script>
+		<table class='calendario' width='1'>
+			<caption>Sala Conferenze - orari della settimana dal 26
+				Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='desir&egrave;e copello
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>XC - Danza classica Propedeutica bambini
+								3-5 anni</div>
+							<div id='label'>XC</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='desir&egrave;e copello
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>XC - Danza classica Propedeutica bambini
+								3-5 anni</div>
+							<div id='label'>XC</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Commando Krav Maga Bambini (anti
+								pedofilia)</div>
+							<div id='label'>Vincenzo D'Agostino</div>
+						</div></a><br>
+				<a class='addspeech'
+					title='arianna zaccagnini
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Ginnastica Artistica per bambini</div>
+							<div id='label'>Arianna Zaccagnini</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Commando Krav Maga Bambini (anti
+								pedofilia)</div>
+							<div id='label'>Vincenzo D'Agostino</div>
+						</div></a><br>
+				<a class='addspeech'
+					title='arianna zaccagnini
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Ginnastica Artistica per bambini</div>
+							<div id='label'>Arianna Zaccagnini</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='alice scorretti
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>XC - Hip Hop Ragazzi</div>
+							<div id='label'>Alice Scorretti</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='alice scorretti
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>XC - Hip Hop Ragazzi</div>
+							<div id='label'>Alice Scorretti</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='Extraclass'><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>XC - Burlesque</div>
+							<div id='label'>Lola Lustrini</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:30</strong>
+							<div id='activity'>XC - Sanda</div>
+							<div id='label'>Marco D'Angelo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:30</strong>
+							<div id='activity'>XC - Sanda</div>
+							<div id='label'>Marco D'Angelo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>piscina interna vasca 25 metri - orari della
+				settimana dal 26 Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td class='reserved_cells' rowspan='15'><a class='addspeech'
+					title=''><div>
+							<strong>07:00-22:00</strong>
+							<div id='activity'>Nuoto Libero</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='15'><a class='addspeech'
+					title=''><div>
+							<strong>07:00-22:00</strong>
+							<div id='activity'>Nuoto Libero</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='15'><a class='addspeech'
+					title=''><div>
+							<strong>07:00-22:00</strong>
+							<div id='activity'>Nuoto Libero</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td class='reserved_cells' rowspan='13'><a class='addspeech'
+					title=''><div>
+							<strong>09:00-22:00</strong>
+							<div id='activity'>Nuoto Libero</div>
+							<div id='label'>2/6 corsie</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='13'><a class='addspeech'
+					title=''><div>
+							<strong>09:00-22:00</strong>
+							<div id='activity'>Nuoto Libero</div>
+							<div id='label'>2/6 corsie</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='9'><a class='addspeech'
+					title=''><div>
+							<strong>09:00-18:00</strong>
+							<div id='activity'>Nuoto Libero</div>
+							<div id='label'>Corsie 2/4</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td class='reserved_cells' rowspan='5'><a class='addspeech'
+					title=''><div>
+							<strong>10:00-15:30</strong>
+							<div id='activity'>Nuoto Libero</div>
+						</div></a></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>Sala Funzionale - orari della settimana dal 26
+				Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>07:10-08:00</strong>
+							<div id='activity'>XC - Risveglio Muscolare TaiJiQuan</div>
+							<div id='label'>Angelo Rossi</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:10-10:00</strong>
+							<div id='activity'>XC - Tai ji quan</div>
+							<div id='label'>Angelo Rossi</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:00-11:00</strong>
+							<div id='activity'>Balli di gruppo</div>
+							<div id='label'>Carmelo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:00-11:00</strong>
+							<div id='activity'>Balli di gruppo</div>
+							<div id='label'>Carmelo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>matteo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Fabrizio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>matteo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Fabrizio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>matteo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+						</div></a></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>valentina</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>valentina</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>14:00-15:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Gabriele</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>14:00-15:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Gabriele</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>14:00-15:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Gabriele</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>14:00-15:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Marco</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:30</strong>
+							<div id='activity'>XC - Centro di Specializzazione Kumite
+								Sportivo (CSKS)</div>
+							<div id='label'>Marco Conforti</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='arianna zaccagnini
+dal 15 settembre'><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>XC - Pugilato Dilettantistico</div>
+							<div id='label'>Arianna Zaccagnini</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Marco</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Marco</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='arianna zaccagnini
+dal 15 settembre'><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>XC - Pugilato Dilettantistico</div>
+							<div id='label'>Arianna Zaccagnini</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>Prepugilistica</div>
+							<div id='label'>Arianna</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>Prepugilistica</div>
+							<div id='label'>Arianna</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>Prepugilistica</div>
+							<div id='label'>Arianna</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Isabella</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>AEROTONE</div>
+							<div id='label'>claudia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Isabella</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>AEROTONE</div>
+							<div id='label'>claudia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Isabella</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>Lory</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>GAG</div>
+							<div id='label'>massimo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>Lory</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>GAG</div>
+							<div id='label'>massimo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>Rowing</div>
+							<div id='label'>Lory</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Fabrizio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Prepugilistica</div>
+							<div id='label'>arianna</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Fabrizio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Prepugilistica</div>
+							<div id='label'>arianna</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Allenamento Funzionale</div>
+							<div id='label'>Fabrizio</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='
+trisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>21:00-22:30</strong>
+							<div id='activity'>XC - Muay Thai</div>
+							<div id='label'>Saverio Gabrielli</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>21:00-22:30</strong>
+							<div id='activity'>XC - MMA Mixed Martial Arts</div>
+							<div id='label'>Saverio Gabrielli</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='
+trisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>21:00-22:30</strong>
+							<div id='activity'>XC - Muay Thai</div>
+							<div id='label'>Saverio Gabrielli</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>21:00-22:30</strong>
+							<div id='activity'>XC - MMA Mixed Martial Arts</div>
+							<div id='label'>Saverio Gabrielli</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='
+trisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>21:00-22:30</strong>
+							<div id='activity'>XC - Muay Thai</div>
+							<div id='label'>Saverio Gabrielli</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>Sala Spinning - orari della settimana dal 26
+				Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>07:30-08:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Luigi M.</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>07:30-08:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Luigi M.</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Rosanna P.</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Rosanna P.</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Staff Italiana Fitness</div>
+						</div></a></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Gianluca A.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Susanna C.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Gianluca A.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Susanna C.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Gianluca A.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Claudio G.</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Luigi M.</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Emanuele E.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Gianluca A.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Emanuele E.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Gianluca A.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Emanuele E.</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:10-20:10</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Emanuele E.</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:10-20:10</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Emanuele E.</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:10-20:10</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Emanuele E.</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Simona L.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Gianluca A.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Simona L.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Gianluca A.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Spinning</div>
+							<div id='label'>Simona L.</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>Sala Fitness - orari della settimana dal 26
+				Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>07:30-08:30</strong>
+							<div id='activity'>Total Body</div>
+							<div id='label'>Giorgio</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:30-10:30</strong>
+							<div id='activity'>Risveglio Muscolare</div>
+							<div id='label'>desir&egrave;</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:30-10:30</strong>
+							<div id='activity'>Gym Music</div>
+							<div id='label'>francesca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:30-10:30</strong>
+							<div id='activity'>Risveglio Muscolare</div>
+							<div id='label'>desir&egrave;</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:30-10:30</strong>
+							<div id='activity'>Gym Music</div>
+							<div id='label'>francesca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:30-10:30</strong>
+							<div id='activity'>Risveglio Muscolare</div>
+							<div id='label'>desir&egrave;</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:30-11:30</strong>
+							<div id='activity'>Easy Tone</div>
+							<div id='label'>Carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:30-11:30</strong>
+							<div id='activity'>GAG</div>
+							<div id='label'>francesca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:30-11:30</strong>
+							<div id='activity'>Easy Tone</div>
+							<div id='label'>Carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:30-11:30</strong>
+							<div id='activity'>GAG</div>
+							<div id='label'>francesca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:30-11:30</strong>
+							<div id='activity'>Easy Tone</div>
+							<div id='label'>Carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:00-11:00</strong>
+							<div id='activity'>Gym Music</div>
+							<div id='label'>sara</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Strike Zone</div>
+							<div id='label'>francesca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Strike Zone</div>
+							<div id='label'>francesca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='zumba sentao'><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Total Body Workout</div>
+							<div id='label'>fabiola</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='zumba sentao'><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Total Body Workout</div>
+							<div id='label'>fabiola</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='zumba sentao'><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:00</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>massimo</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:30-17:30</strong>
+							<div id='activity'>GAG Metabolico</div>
+							<div id='label'>anna</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>Brucia Grassi</div>
+							<div id='label'>erika</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:30-17:30</strong>
+							<div id='activity'>GAG Metabolico</div>
+							<div id='label'>anna</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>Brucia Grassi</div>
+							<div id='label'>erika</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:30-17:30</strong>
+							<div id='activity'>GAG Metabolico</div>
+							<div id='label'>anna</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>STEP COREOGRAFICO</div>
+							<div id='label'>massimo</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:30-18:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>erika</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:30-18:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>erika</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:30-18:30</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>carmelo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Power Jump</div>
+							<div id='label'>erika</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Power Jump</div>
+							<div id='label'>erika</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:30-20:30</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>flavio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>STEP COREOGRAFICO</div>
+							<div id='label'>claudia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:30-20:30</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>flavio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>STEP COREOGRAFICO</div>
+							<div id='label'>claudia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:30-20:30</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>flavio</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Strike Zone</div>
+							<div id='label'>Gelsomina Carlomagno</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>claudia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Power Jump</div>
+							<div id='label'>Gelsomina Carlomagno</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>Zumba</div>
+							<div id='label'>claudia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Strike Zone</div>
+							<div id='label'>Gelsomina Carlomagno</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>21:00-22:00</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>massimo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>21:00-22:00</strong>
+							<div id='activity'>Pump</div>
+							<div id='label'>massimo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>Piscina interna vasca 18metri - orari della
+				settimana dal 26 Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>07:40-08:40</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>07:40-08:40</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:10-10:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>09:10-10:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:00-10:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-11:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo-tiziana</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-11:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo-tiziana</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-11:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo-tiziana</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-11:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo-tiziana</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-11:50</strong>
+							<div id='activity'>Acqua Gym</div>
+						</div></a></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>12:10-13:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>12:10-13:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='EXTRACLASS'><div>
+							<strong>12:00-12:50</strong>
+							<div id='activity'>IDROBIKE</div>
+						</div></a></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:10-14:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>tiziana -enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:10-14:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>tiziana -enzo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:10-14:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>tiziana -enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:10-14:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>tiziana -enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:10-14:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>tiziana -enzo</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>14:00-14:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>giorgia</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-15:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='EXTRACLASS'><div>
+							<strong>15:00-15:50</strong>
+							<div id='activity'>IDROBIKE</div>
+							<div id='label'>tiziana-giorgia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='EXTRACLASS'><div>
+							<strong>15:00-15:50</strong>
+							<div id='activity'>IDROBIKE</div>
+							<div id='label'>tiziana-giorgia</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-15:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='EXTRACLASS'><div>
+							<strong>15:00-15:50</strong>
+							<div id='activity'>IDROBIKE</div>
+							<div id='label'>tiziana-giorgia</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-16:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>giorgia</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-17:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='EXTRACLASS'><div>
+							<strong>17:00-17:50</strong>
+							<div id='activity'>IDROBIKE</div>
+							<div id='label'>patrizia</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:10-19:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>rossella-enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-18:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>edoardo-enzo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:10-19:00</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>rossella-enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-18:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>edoardo-enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='EXTRACLASS'><div>
+							<strong>19:00-19:50</strong>
+							<div id='activity'>IDROBIKE</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>19:50-20:40</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>eduardo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-19:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>edoardo enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-19:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>enzo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='EXTRACLASS'><div>
+							<strong>19:00-19:50</strong>
+							<div id='activity'>IDROBIKE</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>19:50-20:40</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>eduardo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-19:50</strong>
+							<div id='activity'>Acqua Gym</div>
+							<div id='label'>edoardo enzo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>Sala EXTRACLASS - orari della settimana dal 26
+				Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>08:00-09:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>08:00-09:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>08:00-09:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>XC - Tip Tap (tap dance)</div>
+							<div id='label'>Vittorio Schiavone</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>XC - Tip Tap (tap dance)</div>
+							<div id='label'>Vittorio Schiavone</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:30-12:30</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>fabio</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>12:00-13:00</strong>
+							<div id='activity'>XC - Danza Classica/Sbarra a terra</div>
+							<div id='label'>Desir&egrave;e Copello</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>12:00-13:00</strong>
+							<div id='activity'>XC - Danza Classica/Sbarra a terra</div>
+							<div id='label'>Desir&egrave;e Copello</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>emanuele</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>emanuele</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>emanuele</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='3'><a class='addspeech'
+					title=''><div>
+							<strong>14:00-17:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>16:00-17:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='alice scorretti
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Hip Hop Bambini</div>
+							<div id='label'>Alice Scorretti</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Danza classica Propedeutica bambini
+								6-9 anni</div>
+							<div id='label'>Desir&egrave;e Copello</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='giorgia stupazzini
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Ginnastica Ritmica Bambine</div>
+							<div id='label'>Giorgia Stupazzini</div>
+						</div></a><br>
+				<a class='addspeech'
+					title='alice scorretti
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Hip Hop Bambini</div>
+							<div id='label'>Alice Scorretti</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Danza classica Propedeutica bambini
+								6-9 anni</div>
+							<div id='label'>Desir&egrave;e Copello</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='giorgia stupazzini
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Ginnastica Ritmica Bambine</div>
+							<div id='label'>Giorgia Stupazzini</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:30-19:30</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>fabio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>massimo fabio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:30-19:30</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>fabio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>massimo fabio</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:30-19:30</strong>
+							<div id='activity'>CrossFit</div>
+							<div id='label'>fabio</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td class='reserved_cells' rowspan='2'><a class='addspeech'
+					title='carlo cosenza
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>19:30-21:00</strong>
+							<div id='activity'>XC - Hip Hop/Video Dance over 16</div>
+							<div id='label'>Carlo Cosenza</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='saverio gabrielli
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>19:00-20:30</strong>
+							<div id='activity'>XC - Grapling No Gi</div>
+							<div id='label'>Saverio Gabrielli</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='2'><a class='addspeech'
+					title='carlo cosenza
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>19:30-21:00</strong>
+							<div id='activity'>XC - Hip Hop/Video Dance over 16</div>
+							<div id='label'>Carlo Cosenza</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='saverio gabrielli
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>19:00-20:30</strong>
+							<div id='activity'>XC - Grapling No Gi</div>
+							<div id='label'>Saverio Gabrielli</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>21:00-22:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>21:00-22:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>21:00-22:00</strong>
+							<div id='activity'>CrossFit</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>Sala Body Mind - orari della settimana dal 26
+				Gennaio al 1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:00-11:00</strong>
+							<div id='activity'>Feldenkrais</div>
+							<div id='label'>Matteo</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>10:00-11:00</strong>
+							<div id='activity'>Feldenkrais</div>
+							<div id='label'>Matteo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Feldenkrais</div>
+							<div id='label'>Francesca D.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Ginnastica Posturale</div>
+							<div id='label'>desiree</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Feldenkrais</div>
+							<div id='label'>Francesca D.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Ginnastica Posturale</div>
+							<div id='label'>desiree</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Feldenkrais</div>
+							<div id='label'>Francesca D.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>11:00-12:00</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>sara</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>12:00-13:00</strong>
+							<div id='activity'>NRG Balance</div>
+							<div id='label'>Valentina N.</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>12:00-13:00</strong>
+							<div id='activity'>NRG Balance</div>
+							<div id='label'>Valentina N.</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:00-14:00</strong>
+							<div id='activity'>Social Dance</div>
+							<div id='label'>Ignazio</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>13:00-14:00</strong>
+							<div id='activity'>Yoga Integrale</div>
+							<div id='label'>Ivan</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>desir&egrave;</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:00-14:00</strong>
+							<div id='activity'>Social Dance</div>
+							<div id='label'>Ignazio</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>13:00-14:00</strong>
+							<div id='activity'>Yoga Integrale</div>
+							<div id='label'>Ivan</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:30-14:30</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>desir&egrave;</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>13:00-14:00</strong>
+							<div id='activity'>Social Dance</div>
+							<div id='label'>Ignazio</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>13:00-14:00</strong>
+							<div id='activity'>Yoga Integrale</div>
+							<div id='label'>Ivan</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>14:30-15:30</strong>
+							<div id='activity'>Yoga</div>
+							<div id='label'>gianluca</div>
+						</div></a></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:00</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>Anna D.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:00</strong>
+							<div id='activity'>Yoga</div>
+							<div id='label'>ivan</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:00</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>Anna D.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:00</strong>
+							<div id='activity'>Yoga</div>
+							<div id='label'>ivan</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>15:00-16:00</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>Anna D.</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='2'><a class='addspeech'
+					title=''><div>
+							<strong>15:30-17:00</strong>
+							<div id='activity'>Danza Yoga</div>
+							<div id='label'>ivan</div>
+						</div></a></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:30-18:00</strong>
+							<div id='activity'>Addome &amp; stretching</div>
+							<div id='label'>anna</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:30-18:00</strong>
+							<div id='activity'>Addome &amp; stretching</div>
+							<div id='label'>anna</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>17:30-18:00</strong>
+							<div id='activity'>Addome &amp; stretching</div>
+							<div id='label'>anna</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Fit Rugby</div>
+							<div id='label'>matteo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Yoga</div>
+							<div id='label'>Gianluca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Fit Rugby</div>
+							<div id='label'>matteo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Yoga</div>
+							<div id='label'>Gianluca</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>Fit Rugby</div>
+							<div id='label'>matteo</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>sara</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='alexandre
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>19:00-20:30</strong>
+							<div id='activity'>XC - Capoeira</div>
+							<div id='label'>XC</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>sara</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='alexandre
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>19:00-20:30</strong>
+							<div id='activity'>XC - Capoeira</div>
+							<div id='label'>XC</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>Pilates</div>
+							<div id='label'>sara</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>XC - Tip Tap (tap dance)</div>
+							<div id='label'>Vittorio Schiavone</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Salsa</div>
+							<div id='label'>giuseppe</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Feldenkrais</div>
+							<div id='label'>Matteo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Salsa</div>
+							<div id='label'>giuseppe</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:30-21:30</strong>
+							<div id='activity'>Feldenkrais</div>
+							<div id='label'>Matteo</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>20:00-21:00</strong>
+							<div id='activity'>XC - Tip Tap (tap dance)</div>
+							<div id='label'>Vittorio Schiavone</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<table class='calendario' width='1'>
+			<caption>Ludoteca - orari della settimana dal 26 Gennaio al
+				1 Febbraio</caption>
+			<tr>
+				<th class='th_hours'>orario<br>
+				<img src='/admin/img/spacer.gif' class='hours_width' height='1'></th>
+				<th class='th_day'>luned&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>marted&igrave;<br>
+				<img src='/admin/img/spacer.gif' class='days_width'></th>
+				<th class='th_day'>mercoled&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>gioved&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>venerd&igrave;<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_day'>sabato<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+				<th class='th_holiday'>domenica<br>
+				<img src='/admin/img/spacer.gif' width='85' height='1'></th>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>7 - 8</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>8 - 9</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>9 - 10</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>10 - 11</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>11 - 12</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>12 - 13</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>13 - 14</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>14 - 15</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>15 - 16</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>16 - 17</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>17 - 18</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='fabrizio dav&igrave;
+trisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Karate Bambini</div>
+							<div id='label'>Fabrizio Dav&igrave;</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='fabrizio dav&igrave;
+trisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Karate Bambini</div>
+							<div id='label'>Fabrizio Dav&igrave;</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='fabrizio dav&igrave;
+trisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>17:00-18:00</strong>
+							<div id='activity'>XC - Karate Bambini</div>
+							<div id='label'>Fabrizio Dav&igrave;</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>18 - 19</td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>XC - Karate Ragazzi</div>
+							<div id='label'>Fabrizio Dav&igrave;</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='alexandre
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>XC - Capoeira Bambini</div>
+							<div id='label'>XC</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>XC - Karate Ragazzi</div>
+							<div id='label'>Fabrizio Dav&igrave;</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='alexandre
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>XC - Capoeira Bambini</div>
+							<div id='label'>XC</div>
+						</div></a></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title=''><div>
+							<strong>18:00-19:00</strong>
+							<div id='activity'>XC - Karate Ragazzi</div>
+							<div id='label'>Fabrizio Dav&igrave;</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>19 - 20</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='angelo rossi
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>XC - Tai ji quan</div>
+							<div id='label'>Angelo Rossi</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='angelo rossi
+bisettimanale 1h
+dal 23 settembre'><div>
+							<strong>19:00-20:00</strong>
+							<div id='activity'>XC - Tai ji quan</div>
+							<div id='label'>Angelo Rossi</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>20 - 21</td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='angelo rossi
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>20:00-21:30</strong>
+							<div id='activity'>XC - Wushu Kung Fu</div>
+							<div id='label'>Angelo Rossi</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>20:00-21:30</strong>
+							<div id='activity'>XC - Commando Krav Maga Adulti</div>
+							<div id='label'>Vincenzo D'Agostino</div>
+						</div></a></td>
+				<td></td>
+				<td class='reserved_cells' rowspan='1'><a class='addspeech'
+					title='angelo rossi
+bisettimanale 1,5h
+dal 23 settembre'><div>
+							<strong>20:00-21:30</strong>
+							<div id='activity'>XC - Wushu Kung Fu</div>
+							<div id='label'>Angelo Rossi</div>
+						</div></a><br>
+				<a class='addspeech' title=''><div>
+							<strong>20:00-21:30</strong>
+							<div id='activity'>XC - Commando Krav Maga Adulti</div>
+							<div id='label'>Vincenzo D'Agostino</div>
+						</div></a></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='light_cells'>
+				<td class='light_hours'>21 - 22</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class='dark_cells'>
+				<td class='dark_hours'>22 - 23</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<p align="left" class="noPrint">
+			<a href="#" onClick="window.print();return false"
+				title="Clicca per stampare gli orari"><img
+				src="/modules/timetable/img/stampa.jpg" border="0" /></a> <a
+				href="javascript:self.close()"><img
+				src="/modules/timetable/img/chiudi.jpg" border="0" /></a>
+		</p>
+	</div>
+
+</body>
+</html>
