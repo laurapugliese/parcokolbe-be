@@ -1,13 +1,13 @@
-DROP TABLE IF EXISTS sale;
-CREATE TABLE sale (
+DROP TABLE IF EXISTS parcokolbe_sale;
+CREATE TABLE parcokolbe_sale (
 	id        	INT(10) NOT NULL,
 	nome    	VARCHAR(45) NOT NULL,
 	categoria	VARCHAR(45),
 	PRIMARY KEY (id, nome)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS corsi;
-CREATE TABLE corsi (
+DROP TABLE IF EXISTS parcokolbe_corsi;
+CREATE TABLE parcokolbe_corsi (
 	idsala				INT(10) NOT NULL,
 	giorno				DATE NOT NULL,
 	corso    			VARCHAR(150) NOT NULL,

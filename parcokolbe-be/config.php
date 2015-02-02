@@ -9,7 +9,7 @@ setlocale(LC_TIME, 'it_IT');
 $dbhost = "localhost";
 $dbport = "3306";
 $dbuser = "root";
-$dbpassword = "root"; 
+$dbpassword = "root";
 $database = "parcokolbe";
 
 define("URL_ORARIO_LEZIONI", "http://italianafitness.it/parco-kolbe/timetable_print.php");

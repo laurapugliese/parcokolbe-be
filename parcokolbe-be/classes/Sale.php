@@ -1,5 +1,5 @@
 <?php
-include "../utils/DBUtils.php";
+include "utils/DBUtils.php";
 
 class Sale{
 	

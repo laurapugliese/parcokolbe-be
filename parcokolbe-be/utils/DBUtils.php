@@ -1,5 +1,5 @@
 <?php
-include "../config.php";
+include "config.php";
 
 class DBUtils {
  
@@ -29,6 +29,7 @@ class DBUtils {
     	if ($this->connection->connect_error) {
 			die('Connect Error (' . $this->connection->connect_errno . ') ' . $this->connection->connect_error);
 		}
+		$this->connection->set_charset("utf8");
     }
 
     public function execute_query($query) {

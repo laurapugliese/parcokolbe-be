@@ -1,9 +1,9 @@
 <?php
-include "../config.php";
-include "../libs/simple_html_dom.php";
-include "../libs/Array2XML.php";
-include "../utils/common_functions.php";
-include '../classes/Sale.php';
+include "config.php";
+include "libs/simple_html_dom.php";
+include "libs/Array2XML.php";
+include "utils/common_functions.php";
+include 'classes/Sale.php';
 
 define("CHIAVE_CORSO", "corso");
 define("CHIAVE_ISTRUTTORE", "istruttore");

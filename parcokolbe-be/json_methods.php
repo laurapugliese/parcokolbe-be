@@ -1,12 +1,14 @@
 <?php
+include "config.php";
 include "classes/Sale.php";
 include "utils/common_functions.php";
 
-$classname = isset($_REQUEST["classname"]) ? $_REQUEST["classname"] : "";
-$methodname = isset($_REQUEST["methodname"]) ? $_REQUEST["methodname"] : "";
+$classname = isset($_REQUEST["classname"]) ? $_REQUEST["classname"] : null;
+$methodname = isset($_REQUEST["methodname"]) ? $_REQUEST["methodname"] : null;
 
-_print_r('classname[' . $classname . ']<br>');
-_print_r('methodname[' . $methodname . ']<br>');
-
-$instance = new $classname;
-_print_r($instance->$methodname());
+if(isset($classname) && isset($methodname)){
+	
+	$instance = new $classname;
+	$result = call_user_func_array(array($instance, $methodname), array());
+	echo json_encode($result, JSON_UNESCAPED_UNICODE);
+}
